@@ -17,6 +17,7 @@ import android.graphics.Paint;
 
 public class GameEngine extends View implements Callback {
 	private Handler myHandler;
+	private int points;
 	Paint background;
 	Paint holes;
 	Paint holes_shallow;
@@ -62,8 +63,11 @@ private void createMoles() {
 @Override
 public boolean onTouchEvent(MotionEvent event) {
 	for (Drawable d : myMoles) {
-		d.pressed(event);
+		if (d.pressed(event))
+			points++;
+		
 	}
+	
 	Log.i("K3", "Touch "+event.getX()+","+event.getY());
 	update();
 	return super.onTouchEvent(event);
@@ -88,6 +92,9 @@ public boolean handleMessage(Message arg0) {
 protected void onDraw(Canvas canvas) {
 	super.onDraw(canvas);
 	canvas.drawPaint(background);
+	Paint _p2;
+	_p2 = new Paint();
+	_p2.setARGB(255,0,0,0);
 	for (int i = 0; i < 3; i++) {
 		for (int j = 0; j < 3; j++) {
 			canvas.drawCircle(60+(i*100), 100+(j*100), 40, holes_shallowest);
@@ -106,6 +113,7 @@ protected void onDraw(Canvas canvas) {
 	/*for (Drawable d : myHoles) {
 		d.draw(canvas);
 	}*/
+	canvas.drawText("Score: " + points, 20, 400, _p2);
 	for (Drawable d : myMoles) {
 		d.draw(canvas);
 	}
