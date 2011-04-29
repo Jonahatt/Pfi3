@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+android:background="@color/background"
+android:layout_height="fill_parent"
+android:layout_width="fill_parent"
+android:orientation="horizontal" android:gravity="top">
+<LinearLayout
+android:orientation="vertical"
+android:layout_height="wrap_content"
+android:layout_width="fill_parent"
+android:gravity="top" android:layout_gravity="top|center">
+
+<EditText android:id="@+id/editText1" android:hint="Skicka meddelande" android:height="10dip" android:layout_width="match_parent" android:layout_gravity="top" android:gravity="top|left" android:maxLength="256" android:textColorHighlight="@color/highlightColor" android:textColor="@color/txtColor" android:textColorHint="@color/hintColor" android:layout_marginTop="60dip" android:layout_height="170dip"></EditText>
+<EditText android:id="@+id/editText2" android:hint="Tag" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxLength="32" android:layout_marginTop="15dip" android:textColorHighlight="@color/highlightColor" android:textColor="@color/txtColor" android:textColorHint="@color/hintColor"></EditText>
+<Button android:text="@string/submit_label_send" android:layout_width="fill_parent" android:id="@+id/submit_button" android:layout_marginTop="30dip" android:layout_height="100dip" android:textSize="50dip"></Button>
+</LinearLayout>
+</LinearLayout>

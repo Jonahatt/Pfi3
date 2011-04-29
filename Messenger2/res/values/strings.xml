@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Ess-Emm-Ess Messenger</string>
+	<string name="submit_label_send">Skicka!</string>
+	<string name="submit_label_log">Login!</string>
+	<string name="submit_label_refresh">Updatera!</string>
+	<string name="main_title">Skicka Meddelande</string>
+	<string name="read_title">Läs Meddelanden</string>
+	<string name="submit_title">Submit message</string>
+	
+	<string name="submit_label_read">Läs!</string>
+	<string name="title_send">Skicka</string>
+	<string name="shortcut_send">s</string>
+	<string name="title_read">Läs</string>
+	<string name="shortcut_read">l</string>
+	
+	<string name="submit_text">Hej</string>
+</resources>

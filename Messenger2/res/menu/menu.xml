@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/send"
+android:title="@string/submit_label_send"
+android:alphabeticShortcut="@string/shortcut_send" />
+
+<item android:id="@+id/read"
+android:title="@string/submit_label_read"
+android:alphabeticShortcut="@string/shortcut_read"/>
+</menu>
